@@ -1,38 +1,36 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Fragment } from 'react';
+import classNames from 'classnames/bind';
+import styles from './App.module.scss';
 
-import '~/App.css';
-import { publicRoutes } from '~/routes';
-import { DefaultLayout } from '~/components/Layout';
+import Header from '~/components/Header';
+import Footer from '~/components/Footer';
+import About from '~/components/About/About';
+import Projects from '~/components/Projects/Projects';
+import Skills from '~/components/Skills/Skills';
+import Contact from '~/components/Contact/Contact';
+
+import { useContext } from 'react';
+import { ThemeContext } from './contexts/theme';
+
+const cx = classNames.bind(styles);
 
 function App() {
+    const [{ themeName }] = useContext(ThemeContext);
+
     return (
-        <Router>
-            <div className="App">
-                <Routes>
-                    {publicRoutes.map((route, index) => {
-                        let Layout = DefaultLayout; 
-                        if (route.layout) {
-                            Layout = route.layout;
-                        } else if (route.layout === null) {
-                            Layout = Fragment;
-                        }
-                        const Page = route.component;
-                        return (
-                            <Route
-                                key={index}
-                                path={route.path}
-                                element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
-                                }
-                            />
-                        );
-                    })}
-                </Routes>
-            </div>
-        </Router>
+        <div id="top" className={cx({ [themeName]: themeName }, 'app')}>
+            <Header />
+
+            <main>
+                <About />
+                <Projects />
+                <Skills />
+                <Contact />
+            </main>
+
+            {/* <ScrollToTop /> */}
+            <Footer />
+        </div>
     );
 }
 

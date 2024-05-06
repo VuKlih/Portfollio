@@ -1,43 +1,58 @@
-@import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
-
-:root {
-    --primary: #fe2c55;
-    --black: #000;
-    --white: #fff;
-    --text-color: #333;
-
-    //default layout
-    --default-layout-header-height: 60px;
-    --default-layout-width: 1318px;
-}
-
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-rendering: optimizeSpeed;
-    color: var(--text-color);
-
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    color: var(--clr-fg-alt);
 }
 
-button, input, [tabindex] {
-    outline: none;
-    border: none;
+h1 {
+    font-size: 4rem;
 }
 
-a[href]{
-    color: var(--text-color);
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
     text-decoration: none;
+}
 
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.6rem;
+    }
 }
