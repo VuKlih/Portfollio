@@ -1,0 +1,50 @@
+.blog {
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+    display: flex;
+    border-radius: var(--project-blog-border-radius);
+}
+
+.blog:hover {
+    transform: translateY(-7px);
+}
+
+.blog-image {
+    width: 45%;
+}
+
+.blog-infor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    margin-left: 12px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width: 400px) {
+    .blog {
+        flex-direction: column;
+    }
+
+    .blog-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        position: relative;
+        // bottom: 10em;
+    }
+}

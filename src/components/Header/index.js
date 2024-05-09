@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 
 import { header } from '~/portfolio';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '~/components/Navbar/Navbar';
 
 const cx = classNames.bind(styles);
 function Header() {

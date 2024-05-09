@@ -1,0 +1,59 @@
+.about {
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+}
+
+.infor {
+    // display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.animation {
+    padding-left: 60px;
+}
+
+.about__name {
+    color: var(--clr-primary);
+}
+
+.about__role {
+    margin-top: 1.2em;
+}
+
+.about__desc {
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.about__desc,
+.about__contact {
+    margin-top: 2.4em;
+}
+
+.about__contact {
+    span {
+        margin-right: 1em;
+    }
+}
+
+.margin-R {
+    margin-right: 0.8em;
+}
+
+@media (max-width: 600px) {
+    .about {
+        // .app .about {
+        align-items: flex-start;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+
+    .infor {
+        display: flex;
+        text-align: center;
+    }
+}
+
+// "@babel/plugin-proposal-private-property-in-object": "version_number_here"

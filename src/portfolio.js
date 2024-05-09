@@ -1,7 +1,8 @@
+import ResumePDF from '~/assets/KLih_CV_Eng.pdf';
 const header = {
     // all the properties are optional - can be left empty or deleted
     homepage: 'https://github.com/VuKlih/Portfollio',
-    title: 'KL.',
+    title: 'VHKL.',
 };
 
 const about = {
@@ -9,8 +10,8 @@ const about = {
     name: 'Khanh Linh',
     role: 'Front End Developer',
     description:
-        'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-    resume: 'https://example.com',
+        "I am a third-year student studying Information and Communications Technology with a strong passion for programming and website development",
+    resume: ResumePDF,
     social: {
         linkedin: 'https://linkedin.com',
         github: 'https://github.com',
@@ -21,7 +22,7 @@ const projects = [
     // projects can be added an removed
     // if there are no projects, Projects section won't show up
     {
-        name: 'Project 1',
+        name: 'Mobile Application OpenDota',
         description:
             'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
         stack: ['SASS', 'TypeScript', 'React'],
@@ -29,7 +30,7 @@ const projects = [
         livePreview: 'https://github.com',
     },
     {
-        name: 'Project 2',
+        name: 'Todolist',
         description:
             'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
         stack: ['SASS', 'TypeScript', 'React'],
@@ -37,7 +38,15 @@ const projects = [
         livePreview: 'https://github.com',
     },
     {
-        name: 'Project 3',
+        name: 'Movie Recommender System',
+        description:
+            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+        stack: ['SASS', 'TypeScript', 'React'],
+        sourceCode: 'https://github.com',
+        livePreview: 'https://github.com',
+    },
+    {
+        name: 'Portfolio',
         description:
             'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
         stack: ['SASS', 'TypeScript', 'React'],

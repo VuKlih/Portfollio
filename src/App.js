@@ -1,16 +1,12 @@
-import { Fragment } from 'react';
 import classNames from 'classnames/bind';
 import styles from './App.module.scss';
+import { useContext } from 'react';
+import { ThemeContext } from './contexts/theme';
 
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
-import About from '~/components/About/About';
-import Projects from '~/components/Projects/Projects';
-import Skills from '~/components/Skills/Skills';
-import Contact from '~/components/Contact/Contact';
+import { About, Projects, Skills, Blogs, Contact, ScrollToTop } from '~/components/Main';
 
-import { useContext } from 'react';
-import { ThemeContext } from './contexts/theme';
 
 const cx = classNames.bind(styles);
 
@@ -25,10 +21,12 @@ function App() {
                 <About />
                 <Projects />
                 <Skills />
+                <Blogs />
                 <Contact />
             </main>
 
-            {/* <ScrollToTop /> */}
+            <ScrollToTop />
+
             <Footer />
         </div>
     );

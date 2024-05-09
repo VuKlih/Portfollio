@@ -14,7 +14,8 @@
         --clr-fg: #555;
         --clr-fg-alt: #444;
         --clr-primary: #2978b5;
-        --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        --shadow: rgb(211 150 98 / 20%) 0px 7px 29px 0px;
     }
 
     .dark {
@@ -27,17 +28,20 @@
     }
 
     main {
+        --project-blog-border-radius: 14px;
+
         max-width: 1100px;
         width: 95%;
         margin: 0 auto;
     }
+
     .section {
         margin-top: 5em;
     }
 
     .section__title {
         text-align: center;
-        margin-bottom: 1em;
+        margin-bottom: 2.2em;
         text-transform: uppercase;
     }
 
@@ -90,6 +94,7 @@
         font-size: 0.9rem;
         text-transform: lowercase;
         transition: transform 0.2s ease-in-out;
+        border-radius: 16px;
     }
 
     .btn--icon {

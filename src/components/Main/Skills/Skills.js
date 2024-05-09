@@ -9,11 +9,11 @@ const Skills = () => {
   if (!skills.length) return null
 
   return (
-    <section className={cx('section skills')} id='skills'>
+    <section className={cx('section', 'skills')} id='skills'>
       <h2 className={cx('section__title')}>Skills</h2>
       <ul className={cx('skills__list')}>
         {skills.map((skill) => (
-          <li key={uniqid()} className={cx('skills__list-item', 'btn btn--plain')}>
+          <li key={uniqid()} className={cx('skills__list-item', 'btn', 'btn--plain')}>
             {skill}
           </li>
         ))}

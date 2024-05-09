@@ -11,6 +11,7 @@ const ProjectContainer = ({ project }) => (
     <h3>{project.name}</h3>
 
     <p className={cx('project__description')}>{project.description}</p>
+    
     {project.stack && (
       <ul className={cx('project__stack')}>
         {project.stack.map((item) => (
@@ -25,7 +26,7 @@ const ProjectContainer = ({ project }) => (
       <a
         href={project.sourceCode}
         aria-label='source code'
-        className={cx('link', 'link--icon')}
+        className={cx('link', 'link--icon', 'margin-L')}
       >
         <GitHubIcon />
       </a>
@@ -35,7 +36,7 @@ const ProjectContainer = ({ project }) => (
       <a
         href={project.livePreview}
         aria-label='live preview'
-        className={cx('link', 'link--icon')}
+        className={cx('link', 'link--icon', 'margin-L')}
       >
         <LaunchIcon />
       </a>
