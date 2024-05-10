@@ -7,11 +7,25 @@ const notion = new Client({
 });
 
 exports.handler = async function (event, context) {
-    const response = await notion.databases.query({
+    try{
+        const response = await notion.databases.query({
         database_id: NOTION_DB,
+        filter: {
+            "property": "Select",
+            "select": {
+                equals: 'live'
+            }
+        }
     });
     return {
         statusCode: 200,
         body: JSON.stringify(response),
-    };
+    }
+    }catch(e){
+        console.error(e);
+        return {
+            statusCode: 500,
+            body: e.toString(),
+        }
+    }
 };
