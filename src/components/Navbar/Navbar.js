@@ -8,7 +8,7 @@ import styles from './Navbar.module.scss';
 
 import './Navbar.module.scss';
 import { ThemeContext } from '~/contexts/theme';
-import { projects, skills, contact, blog } from '~/portfolio';
+import { projects, skills } from '~/portfolio';
 
 const cx = classNames.bind(styles);
 
@@ -20,10 +20,7 @@ const Navbar = () => {
 
     return (
         <nav className={cx('center', 'nav')}>
-            <ul 
-                style={{ display: showNavList ? 'flex' : null }} 
-                className={cx('nav__list')}
-            >
+            <ul style={{ display: showNavList ? 'flex' : null }} className={cx('nav__list')}>
                 {projects.length ? (
                     <li className={cx('nav__list-item')}>
                         <a href="#projects" onClick={toggleNavList} className={cx('link', 'link--nav')}>
@@ -40,23 +37,17 @@ const Navbar = () => {
                     </li>
                 ) : null}
 
-                {blog.length > 0 ? (
-                    <li className={cx('nav__list-item')}>
-                        <a href="#blogs" onClick={toggleNavList} className={cx('link', 'link--nav')}>
-                            Blogs
-                        </a>
-                    </li>
-                ) : null}
+                <li className={cx('nav__list-item')}>
+                    <a href="#blogs" onClick={toggleNavList} className={cx('link', 'link--nav')}>
+                        Blogs
+                    </a>
+                </li>
 
-                {contact.email ? (
                     <li className={cx('nav__list-item')}>
                         <a href="#contact" onClick={toggleNavList} className={cx('link', 'link--nav')}>
                             Contact
                         </a>
                     </li>
-                ) : null}
-
-
             </ul>
 
             <button

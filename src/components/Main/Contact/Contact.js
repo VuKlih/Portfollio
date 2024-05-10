@@ -5,8 +5,6 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { contact } from '~/portfolio';
-
 const cx = classNames.bind(styles);
 
 const Contact = () => {
@@ -33,7 +31,6 @@ const Contact = () => {
         toast.success('You have sent me an email!');
     };
 
-    if (!contact.email) return null;
     return (
         <section className={cx('section', 'contact', 'center')} id="contact">
             <h2 className={cx('section__title')}>Contact</h2>
