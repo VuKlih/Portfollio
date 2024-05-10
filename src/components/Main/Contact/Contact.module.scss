@@ -44,3 +44,9 @@
 .btn--submit {
     width: 9rem;
 }
+
+@media (max-width: 500px) {
+    .Contact-form {
+        width: 100%;
+    }
+}
