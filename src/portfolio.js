@@ -51,7 +51,7 @@ const projects = [
             'My portfolio ',
             stack: ['React', 'JavaScript', 'AntD', 'Notion API'],
             sourceCode: 'https://github.com',
-            livePreview: 'https://mykhalihportfolio.netlify.app',
+            livePreview: 'https://linkorangeportfolio.netlify.app',
     },
 ];
 
