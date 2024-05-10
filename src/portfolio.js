@@ -35,7 +35,7 @@ const projects = [
             'A simple to-do web applicaton made with React.',
         stack: ['React', 'JavaScript', 'AntD'],
         sourceCode: 'https://github.com/VuKlih/Todolist',
-        livePreview: '',
+        livePreview: 'https://todolistiny.netlify.app',
     },
     {
         name: 'Movie Recommender System',
