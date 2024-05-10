@@ -66,15 +66,4 @@ const skills = [
     'Git',
 ];
 
-const contact = {
-    // email is optional - if left empty Contact section won't show up
-    email: 'vhklih0031201@gmail.com',
-};
-
-const blog = [
-   { name: 'How to deploy your project'},
-   { name: 'How to use CSS module'},
-   { name: 'How to use Mantine'}
-]
-
-export { header, about, projects, skills, contact, blog };
+export { header, about, projects, skills };
