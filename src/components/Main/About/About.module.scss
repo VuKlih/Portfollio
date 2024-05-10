@@ -45,7 +45,6 @@
 @media (max-width: 600px) {
     .about {
         // .app .about {
-        align-items: flex-start;
         margin-top: 2em;
         flex-direction: column;
     }
@@ -53,6 +52,10 @@
     .infor {
         display: flex;
         text-align: center;
+    }
+
+    .animation {
+        padding-left: 0px;
     }
 }
 
