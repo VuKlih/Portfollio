@@ -1,4 +1,4 @@
-.blog {
+.blog-item {
     padding: 2em;
     margin: 0 auto;
     text-align: center;
@@ -8,7 +8,7 @@
     border-radius: var(--project-blog-border-radius);
 }
 
-.blog:hover {
+.blog-item:hover {
     transform: translateY(-7px);
 }
 
@@ -23,17 +23,23 @@
     align-items: start;
     text-align: start;
     margin-left: 12px;
+    align-self: start;
 }
 
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
     max-width: 100%;
-    display: block;
+    display: flex;
+    max-height: 100%;
+}
+
+.btn-link {
+    margin-top: 8px;
 }
 
 @media (max-width: 400px) {
-    .blog {
+    .blog-item {
         flex-direction: column;
     }
 

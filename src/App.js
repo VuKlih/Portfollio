@@ -14,15 +14,6 @@ const cx = classNames.bind(styles);
 function App() {
     const [{ themeName }] = useContext(ThemeContext);
 
-    // const [data, setData] = useState({});
-
-    // useEffect(() => {
-    //     // notion-api-worker
-    //     fetch('notion-api.splitbee.io/v1/page/103df9f8c2a1429d9fe98d3e0fd1b74f')
-    //         .then((res) => res.json())
-    //         .then((data) => setData(data));
-    // }, []);
-
     return (
         <div id="top" className={cx({ [themeName]: themeName }, 'app')}>
             <Header />

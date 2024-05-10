@@ -10,10 +10,10 @@ const about = {
     name: 'Khanh Linh',
     role: 'Front End Developer',
     description:
-        "I am a third-year student studying Information and Communications Technology with a strong passion for programming and website development",
+        'I am a third-year student who adores clean, simple, and distinctive design, fueled by a fervent passion for programming and website development',
     resume: ResumePDF,
     social: {
-        linkedin: 'https://linkedin.com',
+        linkedin: '',
         github: 'https://github.com',
     },
 };
@@ -24,44 +24,43 @@ const projects = [
     {
         name: 'Mobile Application OpenDota',
         description:
-            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-        stack: ['SASS', 'TypeScript', 'React'],
-        sourceCode: 'https://github.com',
-        livePreview: 'https://github.com',
+            "An application for providing real-time information and analytics for the popular online game Dota 2.",
+        stack: ['Java', 'XML','retrofit'],
+        sourceCode: 'https://github.com/VuKlih/Mobile_OpenDOTA',
+        livePreview: '',
     },
     {
         name: 'Todolist',
         description:
-            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-        stack: ['SASS', 'TypeScript', 'React'],
-        sourceCode: 'https://github.com',
-        livePreview: 'https://github.com',
+            'A simple to-do web applicaton made with React.',
+        stack: ['React', 'JavaScript', 'AntD'],
+        sourceCode: 'https://github.com/VuKlih/Todolist',
+        livePreview: '',
     },
     {
         name: 'Movie Recommender System',
         description:
-            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-        stack: ['SASS', 'TypeScript', 'React'],
-        sourceCode: 'https://github.com',
-        livePreview: 'https://github.com',
+            'Build filters by applying machine learning techniques to select the most suitable movies, and movie genres to recommend to users',
+        stack: ['Python'],
+        sourceCode: 'https://github.com/VuKlih/FinalML2-Movie-Recommened-system',
+        livePreview: '',
     },
     {
         name: 'Portfolio',
         description:
-            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-        stack: ['SASS', 'TypeScript', 'React'],
-        sourceCode: 'https://github.com',
-        livePreview: 'https://github.com',
+            'My portfolio ',
+            stack: ['React', 'JavaScript', 'AntD', 'Notion API'],
+            sourceCode: 'https://github.com',
+            livePreview: 'https://mykhalihportfolio.netlify.app',
     },
 ];
 
 const skills = [
     // skills can be added or removed
     // if there are no skills, Skills section won't show up
-    'HTML',
-    'CSS',
     'JavaScript',
     'React',
+    'Python',
     'SASS',
     'Material UI',
     'Git',
