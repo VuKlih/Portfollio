@@ -34,11 +34,6 @@ const Contact = () => {
     return (
         <section className={cx('section', 'contact', 'center')} id="contact">
             <h2 className={cx('section__title')}>Contact</h2>
-            {/* <a href={`mailto:${contact.email}`}>
-                <span type="button" className={cx('btn', 'btn--outline')}>
-                    Email me!
-                </span>
-            </a> */}
             <form ref={form} onSubmit={sendEmail} className={cx('Contact-form')}>
                 <label>Name</label>
                 <input type="text" name="user_name" className={cx('contact-item')} />
